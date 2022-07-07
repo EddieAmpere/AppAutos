@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="aplicacioncarrosDataSet2" targetNamespace="http://tempuri.org/aplicacioncarrosDataSet2.xsd" xmlns:mstns="http://tempuri.org/aplicacioncarrosDataSet2.xsd" xmlns="http://tempuri.org/aplicacioncarrosDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="aplicacioncarrosConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="aplicacioncarrosConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AgenciaApp.Properties.Settings.GlobalReference.Default.aplicacioncarrosConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_ConsultaInventarioTableAdapter" GeneratorDataComponentClassName="V_ConsultaInventarioTableAdapter" Name="V_ConsultaInventario" UserDataComponentName="V_ConsultaInventarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="aplicacioncarrosConnectionString (Settings)" DbObjectName="aplicacioncarros.dbo.V_ConsultaInventario" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Marca, Modelo, Color, Año, Precio, Kilometraje, Transmisión FROM dbo.V_ConsultaInventario</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Marca" DataSetColumn="Marca" />
+              <Mapping SourceColumn="Modelo" DataSetColumn="Modelo" />
+              <Mapping SourceColumn="Color" DataSetColumn="Color" />
+              <Mapping SourceColumn="Año" DataSetColumn="Año" />
+              <Mapping SourceColumn="Precio" DataSetColumn="Precio" />
+              <Mapping SourceColumn="Kilometraje" DataSetColumn="Kilometraje" />
+              <Mapping SourceColumn="Transmisión" DataSetColumn="Transmisión" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="aplicacioncarrosDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="aplicacioncarrosDataSet2" msprop:Generator_UserDSName="aplicacioncarrosDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_ConsultaInventario" msprop:Generator_TableClassName="V_ConsultaInventarioDataTable" msprop:Generator_TableVarName="tableV_ConsultaInventario" msprop:Generator_TablePropName="V_ConsultaInventario" msprop:Generator_RowDeletingName="V_ConsultaInventarioRowDeleting" msprop:Generator_RowChangingName="V_ConsultaInventarioRowChanging" msprop:Generator_RowEvHandlerName="V_ConsultaInventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="V_ConsultaInventarioRowDeleted" msprop:Generator_UserTableName="V_ConsultaInventario" msprop:Generator_RowChangedName="V_ConsultaInventarioRowChanged" msprop:Generator_RowEvArgName="V_ConsultaInventarioRowChangeEvent" msprop:Generator_RowClassName="V_ConsultaInventarioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Marca" msprop:Generator_ColumnVarNameInTable="columnMarca" msprop:Generator_ColumnPropNameInRow="Marca" msprop:Generator_ColumnPropNameInTable="MarcaColumn" msprop:Generator_UserColumnName="Marca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Modelo" msprop:Generator_ColumnVarNameInTable="columnModelo" msprop:Generator_ColumnPropNameInRow="Modelo" msprop:Generator_ColumnPropNameInTable="ModeloColumn" msprop:Generator_UserColumnName="Modelo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Año" msprop:Generator_ColumnVarNameInTable="columnAño" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_UserColumnName="Año" type="xs:int" minOccurs="0" />
+              <xs:element name="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" msprop:Generator_UserColumnName="Precio" type="xs:int" minOccurs="0" />
+              <xs:element name="Kilometraje" msprop:Generator_ColumnVarNameInTable="columnKilometraje" msprop:Generator_ColumnPropNameInRow="Kilometraje" msprop:Generator_ColumnPropNameInTable="KilometrajeColumn" msprop:Generator_UserColumnName="Kilometraje" type="xs:int" minOccurs="0" />
+              <xs:element name="Transmisión" msprop:Generator_ColumnVarNameInTable="columnTransmisión" msprop:Generator_ColumnPropNameInRow="Transmisión" msprop:Generator_ColumnPropNameInTable="TransmisiónColumn" msprop:Generator_UserColumnName="Transmisión" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA877264-7B7C-4A1F-92BB-7FF42534E269}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AgenciaApp</RootNamespace>
+    <AssemblyName>AgenciaApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aplicacioncarrosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aplicacioncarrosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aplicacioncarrosDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aplicacioncarrosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aplicacioncarrosDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aplicacioncarrosDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aplicacioncarrosDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aplicacioncarrosDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="aplicacioncarrosDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aplicacioncarrosDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="fmrAltasCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrAltasCli.Designer.cs">
+      <DependentUpon>fmrAltasCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrAltasInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrAltasInv.Designer.cs">
+      <DependentUpon>fmrAltasInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrBajasCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrBajasCli.Designer.cs">
+      <DependentUpon>fmrBajasCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrBajasInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrBajasInv.Designer.cs">
+      <DependentUpon>fmrBajasInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrCambiosCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrCambiosCli.Designer.cs">
+      <DependentUpon>fmrCambiosCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrCambiosInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrCambiosInv.Designer.cs">
+      <DependentUpon>fmrCambiosInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrConsultasCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrConsultasCli.Designer.cs">
+      <DependentUpon>fmrConsultasCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrConsultasInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrConsultasInv.Designer.cs">
+      <DependentUpon>fmrConsultasInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmrMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrMenu.Designer.cs">
+      <DependentUpon>fmrMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmrAltasCli.resx">
+      <DependentUpon>fmrAltasCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrAltasInv.resx">
+      <DependentUpon>fmrAltasInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrBajasCli.resx">
+      <DependentUpon>fmrBajasCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrBajasInv.resx">
+      <DependentUpon>fmrBajasInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrCambiosCli.resx">
+      <DependentUpon>fmrCambiosCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrCambiosInv.resx">
+      <DependentUpon>fmrCambiosInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrConsultasCli.resx">
+      <DependentUpon>fmrConsultasCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrConsultasInv.resx">
+      <DependentUpon>fmrConsultasInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrMenu.resx">
+      <DependentUpon>fmrMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="aplicacioncarrosDataSet.xsc">
+      <DependentUpon>aplicacioncarrosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aplicacioncarrosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aplicacioncarrosDataSet.xss">
+      <DependentUpon>aplicacioncarrosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet1.xsc">
+      <DependentUpon>aplicacioncarrosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aplicacioncarrosDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aplicacioncarrosDataSet1.xss">
+      <DependentUpon>aplicacioncarrosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet2.xsc">
+      <DependentUpon>aplicacioncarrosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aplicacioncarrosDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aplicacioncarrosDataSet2.xss">
+      <DependentUpon>aplicacioncarrosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet3.xsc">
+      <DependentUpon>aplicacioncarrosDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aplicacioncarrosDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aplicacioncarrosDataSet3.xss">
+      <DependentUpon>aplicacioncarrosDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet4.xsc">
+      <DependentUpon>aplicacioncarrosDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="aplicacioncarrosDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aplicacioncarrosDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aplicacioncarrosDataSet4.xss">
+      <DependentUpon>aplicacioncarrosDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
