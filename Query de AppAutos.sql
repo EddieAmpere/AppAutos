@@ -6,10 +6,10 @@ IdVehiculo INT IDENTITY (1000,1) CONSTRAINT Pk_Inventario PRIMARY KEY,
 Modelo VARCHAR(60),
 Marca VARCHAR(60),
 Color VARCHAR(60),
-A駉 INT,
+A帽o INT,
 Precio INT,
 Kilometraje INT,
-Transmisi髇 VARCHAR(60))
+Transmisi贸n VARCHAR(60))
 
 CREATE TABLE Cliente (
 IdCliente INT IDENTITY (1000,1) CONSTRAINT Pk_Cliente PRIMARY KEY,
@@ -58,12 +58,12 @@ SELECT * FROM ALUMNOS
 update inventario 
 
 
-SELECT IdVehiculo,Modelo,Marca,Color,A駉,Precio,Kilometraje,Transmisi髇 FROM inventario ORDER BY Marca, Modelo ASC;
+SELECT IdVehiculo,Modelo,Marca,Color,A帽o,Precio,Kilometraje,Transmisi贸n FROM inventario ORDER BY Marca, Modelo ASC;
 
-SELECT IdVehiculo,Modelo,Marca,Color,A駉,Precio,Kilometraje,Transmisi髇 FROM inventario ORDER BY Marca ASC;
+SELECT IdVehiculo,Modelo,Marca,Color,A帽o,Precio,Kilometraje,Transmisi贸n FROM inventario ORDER BY Marca ASC;
 
 CREATE VIEW V_ConsultaInventario AS
-Select Marca,Modelo,Color,A駉,Precio,Kilometraje,Transmisi髇 
+Select Marca,Modelo,Color,A帽o,Precio,Kilometraje,Transmisi贸n 
 FROM inventario
 
 CREATE VIEW V_ConsultaCliente AS
